@@ -10,8 +10,8 @@ This script implements a comprehensive customer segmentation pipeline that:
 5. Performs K-Means clustering for customer segmentation
 6. Generates visualizations for portfolio submission
 
-Author: AI Assistant
-Date: 2024
+Author: Siddhant Patil
+Date: 2025
 """
 
 import pandas as pd
