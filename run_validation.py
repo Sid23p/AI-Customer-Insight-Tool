@@ -1,6 +1,5 @@
 """
-Testing (Verification and Validation) Script for the AI-Powered Customer Insight Tool
-
+Testing (Verification and Validation) Script for the Artificial Intelligence Customer Insight Tool in E-commerce Segmentation.  
 Purpose:
 This script serves as the formal testing and validation component for the project. 
 Its sole function is to run the model parameter validation to determine the optimal 

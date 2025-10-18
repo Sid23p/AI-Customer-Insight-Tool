@@ -1,5 +1,5 @@
 """
-AI-Powered Customer Insight Tool
+Artificial Intelligence Customer Insight Tool in E-commerce Segmentation.  
 Customer Segmentation using RFM Analysis and K-Means Clustering
 
 This script implements a comprehensive customer segmentation pipeline that:
