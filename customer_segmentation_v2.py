@@ -1,14 +1,14 @@
 """
 Artificial Intelligence Customer Insight Tool in E-commerce Segmentation.  
-Customer Segmentation using RFM Analysis and K-Means Clustering
+RFM Analysis Customer Segmentation and K-Means Clustering.
 
-This script implements a comprehensive customer segmentation pipeline that:
-1. Loads and cleans retail transaction data
-2. Calculates RFM (Recency, Frequency, Monetary) metrics
-3. Applies preprocessing and scaling
-4. Determines optimal number of clusters using elbow method and silhouette analysis
-5. Performs K-Means clustering for customer segmentation
-6. Generates visualizations for portfolio submission
+This script executes enhanced customer segmentation pipeline which: 
+- Cleans and loads the retail transaction data. 
+- Manages RFM (Recency, Frequency) and Monetary. 
+- performance Customization and scaling over preprocessing. 
+- Decides on the best amount of groups to be used using elbow method and silhouette analysis. 
+- Does K-Means clustering customer segmentation. 
+- Prepares visualisation in order to submit a portfolio. 
 
 Author: Siddhant Patil
 Date: 2025
