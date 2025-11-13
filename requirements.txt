@@ -33,7 +33,6 @@ jsonschema-specifications==2025.9.1
 jupyter_client==8.6.2
 jupyter_core==5.7.2
 kiwisolver==1.4.7
-macholib @ file:///AppleInternal/Library/BuildRoots/39d9dc1a-2111-11f0-be06-226177e5bb69/Library/Caches/com.apple.xbs/Sources/python3/macholib-1.15.2-py2.py3-none-any.whl
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 matplotlib==3.8.4
@@ -74,7 +73,6 @@ scikit-learn-extra==0.3.0
 scipy==1.13.1
 seaborn==0.13.2
 selenium==4.33.0
-six @ file:///AppleInternal/Library/BuildRoots/39d9dc1a-2111-11f0-be06-226177e5bb69/Library/Caches/com.apple.xbs/Sources/python3/six-1.15.0-py2.py3-none-any.whl
 smmap==5.0.2
 sniffio==1.3.1
 sortedcontainers==2.4.0
