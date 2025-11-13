@@ -1,0 +1,71 @@
+# Ignore python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore virtual environment folders
+.venv/
+env/
+venv/
+ENV/
+*.egg-info/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore logs, pid files, and runtime output
+*.log
+*.pid
+
+# Ignore configuration/scripts for local/service setup
+setup.sh
+install_service.sh
+uninstall_service.sh
+fix_service.sh
+fix_permissions.sh
+start_dashboard.sh
+stop_dashboard.sh
+start_dashboard_service.sh
+RUN_PROJECT.sh
+status.sh
+verify_setup.sh
+
+# Ignore service/desktop/systemd/Linux/macOS specific scripts
+*.service
+*.plist
+*.command
+
+# Ignore test/validation scripts (if not used by dashboard)
+*test*.py
+
+# Ignore audit reports and one-off troubleshooting markdowns
+DIAGNOSIS.md
+COMPLETE_AUDIT_REPORT.md
+ROOT_CAUSE_FIX.md
+FINAL_SOLUTION.md
+FIX_CONNECTION_ERROR.md
+PROJECT_SUMMARY.md
+START_HERE.txt
+AI_Powered_Customer_Insight_Tool_Report.md
+QUICK_START_GUIDE.md
+
+# Ignore output and intermediate files
+*.bak
+*.tmp
+backup/
+temp/
+
+# Include: Your main files, documentation, and configuration
+!.streamlit/config.toml
+!requirements.txt
+!README.md
+!app_dashboard.py
+!segmentation_phase3.py
+!customer_segmentation_v2.py
+!online_retail.csv
+
+# You can selectively not ignore certain markdown docs:
+#.gitignore ignores all *.md EXCEPT listed below
+#*.md
+!README.md
