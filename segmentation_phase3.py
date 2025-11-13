@@ -6,8 +6,6 @@ This module is intentionally self-contained so it can be used from both
 command-line scripts and the Streamlit dashboard.
 """
 
-from __future__ import annotations
-
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -79,15 +77,15 @@ def cluster_kmedoids(X: pd.DataFrame, k: int, random_state: int = 42) -> pd.Seri
 
 # ----------------------------- Eval and Export ------------------------------ #
 
-def safe_silhouette(X: pd.DataFrame, labels: pd.Series) -> float | np.nan:
+def safe_silhouette(X: pd.DataFrame, labels: pd.Series) -> float:
     # For DBSCAN, if only 1 cluster or all noise, silhouette is undefined
     unique = np.unique(labels)
     if len(unique) <= 1 or (len(unique) == 2 and -1 in unique and (labels != -1).sum() == 0):
-        return np.nan
+        return float('nan')
     try:
         return float(silhouette_score(X, labels))
     except Exception:
-        return np.nan
+        return float('nan')
 
 
 def profile_clusters(rfm: pd.DataFrame, labels: pd.Series) -> pd.DataFrame:
@@ -136,7 +134,7 @@ def run_all_algorithms(
         export_segmented_csv(rfm, kmdo_labels, "segmented_customers_kmedoids.csv")
     else:
         kmdo_labels = pd.Series(index=X.index, dtype=int)
-        kmdo_sil = np.nan
+        kmdo_sil = float('nan')
 
     return {
         "rfm": rfm,
@@ -169,7 +167,7 @@ if __name__ == "__main__":
     # Quick report
     print("Silhouette Scores (higher is better; NaN may indicate noise-only clusters):")
     for name in ["kmeans", "dbscan", "kmedoids"]:
-        val = results[name]["silhouette"] if name in results else np.nan
+        val = results[name]["silhouette"] if name in results else float('nan')
         print(f"- {name}: {val}")
 
 
