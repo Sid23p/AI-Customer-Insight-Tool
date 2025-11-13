@@ -56,5 +56,8 @@ if __name__ == "__main__":
     ]
     
     # Run Streamlit
-    sys.exit(stcli.main())
+    import os
+    if not os.environ.get("STREAMLIT_RUNNING"):
+        os.environ["STREAMLIT_RUNNING"] = "1"
+        sys.exit(stcli.main())
 
